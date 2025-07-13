@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'theme/AppTheme.dart';
 import 'Home/home.dart';
 
 void main() {
@@ -11,13 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AppCesun',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Mi App',
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      theme: AppTheme.lightTheme, // ← tema global
+      home: const HomeScreen(),
     );
   }
 }
+
