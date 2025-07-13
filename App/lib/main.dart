@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cesunapp/pages/load_page.dart';
+import 'package:cesunapp/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoadPage(), // Solo llama a LoadPage, todo se maneja ahí
+      home: LoginPage(), // Cambiado para iniciar en Login
     );
   }
 }

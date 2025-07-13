@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:cesunapp/filtro.dart';
+import 'package:cesunapp/filtro.dart'; // Asegúrate que esta ruta sea correcta
 
 class LoadPage extends StatefulWidget {
   const LoadPage({Key? key}) : super(key: key);
@@ -38,6 +38,11 @@ class _LoadPageState extends State<LoadPage> {
             SizedBox(
               height: 100,
               child: Lottie.asset('assets/jsons/loading.json'),
+            ),
+            const SizedBox(height: 20),
+            const Text(
+              'Cargando expediente...',
+              style: TextStyle(fontSize: 16, color: Colors.black54),
             ),
           ],
         ),

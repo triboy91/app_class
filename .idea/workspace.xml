@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fb845be-032a-4f87-9e72-8f51c92e19bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/App/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/lib/pages/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/pages/load_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/load_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/App/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,13 +19,28 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="pagina_carga" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2zndYxCWcYVplVEGC1J6Z1ILws7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +57,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "pagina__carga",
+    "git-widget-placeholder": "LoginProducto4",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
     "show.migrate.to.gradle.popup": "false"
@@ -55,6 +74,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7fb845be-032a-4f87-9e72-8f51c92e19bd" name="Changes" comment="" />
