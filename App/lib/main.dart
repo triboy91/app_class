@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoadPage(), // Solo llama a LoadPage, todo se maneja ahí
+      home: LoadPage(), // 👈 Carga primero esta pantalla
     );
   }
 }
