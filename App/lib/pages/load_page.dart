@@ -1,4 +1,4 @@
-import 'package:cesunapp/theme/AppColors.dart';
+import 'package:cesunapp/main.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:cesunapp/Pages/student_page.dart'; // 👈 pantalla de perfil
@@ -22,23 +22,31 @@ class _LoadPageState extends State<LoadPage> {
     });
   }
 
+  
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: AppColors.white70,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(
-              image: AssetImage('assets/images/cesun_logo.png'),
-              width: 150,
-            ),
-            SizedBox(height: 20),
-            CircularProgressIndicator(),
-            SizedBox(height: 10),
-            Text('Cargando...', style: TextStyle(fontSize: 16)),
-          ],
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Logo de CESUN
+              Image.asset(
+                'assets/images/cesun_logo.png',
+                width: 300,
+                height: 300,
+                fit: BoxFit.contain,
+              ),
+              SizedBox(height: 32), // Espacio entre logo y animación
+              // Animación de carga
+              SizedBox(
+                width: 150,
+                height: 150,
+                child: Lottie.asset('assets/jsons/loading.json'),
+              ),
+            ],
+          ),
         ),
       ),
     );
