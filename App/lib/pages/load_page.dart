@@ -1,8 +1,7 @@
+import 'package:cesunapp/theme/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:cesunapp/pages/student.dart'; // 👈 pantalla de perfil
-import 'package:lottie/lottie.dart';
-import 'package:cesunapp/filtro.dart'; // Asegúrate que esta ruta sea correcta
+import 'package:cesunapp/Pages/student_page.dart'; // 👈 pantalla de perfil
 
 class LoadPage extends StatefulWidget {
   const LoadPage({super.key});
@@ -15,12 +14,10 @@ class _LoadPageState extends State<LoadPage> {
   @override
   void initState() {
     super.initState();
-
-    // Esperar 2 segundos y luego navegar al perfil
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const PerfilUsuarioScreen()),
+        MaterialPageRoute(builder: (context) => const StudentPage()),
       );
     });
   }
@@ -28,7 +25,7 @@ class _LoadPageState extends State<LoadPage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white70,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

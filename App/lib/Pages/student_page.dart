@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:cesunapp/pages/load_page.dart'; // Mantienes solo esta pantalla
+import 'package:cesunapp/Pages/load_page.dart'; // Mantienes solo esta pantalla
 
-class PerfilUsuarioScreen extends StatefulWidget {
-  const PerfilUsuarioScreen({super.key});
+class StudentPage extends StatefulWidget {
+  const StudentPage({super.key});
 
   @override
-  State<PerfilUsuarioScreen> createState() => _PerfilUsuarioScreenState();
+  State<StudentPage> createState() => _StudentPageState();
 }
 
-class _PerfilUsuarioScreenState extends State<PerfilUsuarioScreen> {
+class _StudentPageState extends State<StudentPage> {
   final _formKey = GlobalKey<FormState>();
 
   // Controladores vacíos para que el usuario llene los datos

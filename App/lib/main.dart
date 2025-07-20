@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cesunapp/pages/load_page.dart';
-import 'theme/AppTheme.dart';
-import 'Home/home.dart';
-import 'package:cesunapp/pages/login_page.dart';
+import 'package:cesunapp/Pages/load_page.dart';
+import 'Theme/AppTheme.dart';
 
 void main() {
   runApp(const MyApp());

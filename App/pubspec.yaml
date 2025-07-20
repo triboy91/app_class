@@ -19,14 +19,13 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-   assets:
-    - assets/animations/school.json
+   #assets:
 
-  uses-material-design: true
+uses-material-design: true
 
-  assets:
-    - assets/jsons/
-    - assets/images/
+assets:
+  - assets/jsons/
+  - assets/images/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
