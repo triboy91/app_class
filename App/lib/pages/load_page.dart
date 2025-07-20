@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-import 'package:cesunapp/filtro.dart';
+import 'dart:async';
+import 'package:cesunapp/pages/student.dart'; // 👈 pantalla de perfil
 
 class LoadPage extends StatefulWidget {
-  const LoadPage({Key? key}) : super(key: key);
+  const LoadPage({super.key});
 
   @override
   State<LoadPage> createState() => _LoadPageState();
@@ -13,32 +13,32 @@ class _LoadPageState extends State<LoadPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const KardexScreen()),
+
+    // Esperar 2 segundos y luego navegar al perfil
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const PerfilUsuarioScreen()),
       );
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFFCF5FC),
+    return const Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/images/cesun_logo.png',
-              width: 200,
-              height: 200,
-              fit: BoxFit.contain,
+            Image(
+              image: AssetImage('assets/images/cesun_logo.png'),
+              width: 150,
             ),
-            const SizedBox(height: 30),
-            SizedBox(
-              height: 100,
-              child: Lottie.asset('assets/jsons/loading.json'),
-            ),
+            SizedBox(height: 20),
+            CircularProgressIndicator(),
+            SizedBox(height: 10),
+            Text('Cargando...', style: TextStyle(fontSize: 16)),
           ],
         ),
       ),
