@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fb845be-032a-4f87-9e72-8f51c92e19bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App/lib/pages/login_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/lib/pages/load_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/load_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/App/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/App/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/App/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +44,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2zndYxCWcYVplVEGC1J6Z1ILws7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +62,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "LoginProducto4",
+    "git-widget-placeholder": "Rafael",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
     "show.migrate.to.gradle.popup": "false"

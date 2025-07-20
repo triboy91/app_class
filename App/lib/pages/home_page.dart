@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/pages/kardex/kardex_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -8,17 +9,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Indices de navegación
   int _selectedIndex = 0;
   int _careerIndex = 0;
   int _studentLifeIndex = 0;
-
-  // Paginas para cada sección
-  static const List<Widget> _pages = <Widget>[
-    SizedBox(),
-    SizedBox(),
-    Center(child: Text('Titulacion', style: TextStyle(fontSize: 24))),
-  ];
 
   static const List<Tab> _careerTabs = [
     Tab(icon: Icon(Icons.schedule), text: 'Horario'),
@@ -26,10 +19,10 @@ class _HomePageState extends State<HomePage> {
     Tab(icon: Icon(Icons.list_alt), text: 'Kardex'),
   ];
 
-  static const List<Widget> _careerPages = <Widget>[
+  static final List<Widget> _careerPages = <Widget>[
     Center(child: Text('Horario', style: TextStyle(fontSize: 22))),
     Center(child: Text('Calificaciones', style: TextStyle(fontSize: 22))),
-    Center(child: Text('Kardex', style: TextStyle(fontSize: 22))),
+    KardexScreen(), // Aquí se muestra la pantalla de Kardex
   ];
 
   static const List<Tab> _studentLifeTabs = [
@@ -41,9 +34,14 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _studentLifePages = <Widget>[
     Center(child: Text('Servicio Comunitario', style: TextStyle(fontSize: 22))),
     Center(child: Text('Servicio Social', style: TextStyle(fontSize: 22))),
-    Center(
-      child: Text('Prácticas Profesionales', style: TextStyle(fontSize: 22)),
+    Center(child: Text('Prácticas Profesionales', style: TextStyle(fontSize: 22)),
     ),
+  ];
+
+  static const List<Widget> _pages = <Widget>[
+    SizedBox(),
+    SizedBox(),
+    Center(child: Text('Titulacion', style: TextStyle(fontSize: 24))),
   ];
 
   void _onItemTapped(int index) {

@@ -1,7 +1,7 @@
-import 'package:cesunapp/Pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
-import 'package:lottie/lottie.dart'; 
+import 'package:shared_preferences/shared_preferences.dart';
+import 'login_page.dart';
+import 'home_page.dart';
 
 class LoadPage extends StatefulWidget {
   const LoadPage({super.key});
@@ -14,37 +14,28 @@ class _LoadPageState extends State<LoadPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => HomePage()),
-      );
-    });
+    _checkLogin();
   }
 
-  
+  Future<void> _checkLogin() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
+
+    if (isLoggedIn) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => const HomePage()),
+      );
+    } else {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => const LoginPage()),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/images/cesun_logo.png',
-              width: 220,
-              height: 220,
-            ),
-            SizedBox(height: 32),
-            Lottie.asset(
-              'assets/jsons/loading.json',
-              width: 150,
-              height: 150,
-              fit: BoxFit.contain,
-            ),
-          ],
-        ),
-      ),
+    return const Scaffold(
+      body: Center(child: CircularProgressIndicator()),
     );
   }
 }

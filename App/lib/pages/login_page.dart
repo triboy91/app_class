@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cesunapp/Pages/load_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -13,10 +14,13 @@ class _LoginPageState extends State<LoginPage> {
   final _usernameController = TextEditingController();
   final _matriculaController = TextEditingController();
 
-  void _login() {
+  Future<void> _login() async {
     if (_formKey.currentState!.validate()) {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('isLoggedIn', true);
+
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const LoadPage()),
+        MaterialPageRoute(builder: (_) => const HomePage()),
       );
     }
   }
