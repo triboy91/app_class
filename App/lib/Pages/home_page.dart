@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '/pages/kardex/kardex_screen.dart';
+import '/pages/servicios/servicio_comunitario_screen.dart';
+import '/pages/servicios/servicio_social_screen.dart';
+import '/pages/servicios/practicas_profesionales_screen.dart';
+import '/pages/titulacion/titulacion_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,17 +35,16 @@ class _HomePageState extends State<HomePage> {
     Tab(icon: Icon(Icons.article), text: 'Prácticas Profesionales'),
   ];
 
-  static const List<Widget> _studentLifePages = <Widget>[
-    Center(child: Text('Servicio Comunitario', style: TextStyle(fontSize: 22))),
-    Center(child: Text('Servicio Social', style: TextStyle(fontSize: 22))),
-    Center(child: Text('Prácticas Profesionales', style: TextStyle(fontSize: 22)),
-    ),
+  static final List<Widget> _studentLifePages = <Widget>[
+    ServicioComunitarioScreen(),
+    ServicioSocialScreen(),
+    PracticasProfesionalesScreen(),
   ];
 
-  static const List<Widget> _pages = <Widget>[
+  static final List<Widget> _pages = <Widget>[
     SizedBox(),
     SizedBox(),
-    Center(child: Text('Titulacion', style: TextStyle(fontSize: 24))),
+    TitulacionScreen(),
   ];
 
   void _onItemTapped(int index) {
