@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cesunapp/pages/load_page.dart';
+import 'theme/AppTheme.dart';
+import 'Home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Mi App',
       debugShowCheckedModeBanner: false,
-      home: LoadPage(), // Solo llama a LoadPage, todo se maneja ahí
+      theme: AppTheme.lightTheme, // ← tema global
+      home: LoadPage(),
     );
   }
 }
