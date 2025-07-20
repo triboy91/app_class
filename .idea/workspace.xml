@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fb845be-032a-4f87-9e72-8f51c92e19bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App/lib/Pages/calificaciones/calificaciones_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/lib/Pages/horario/horario_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/lib/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/Pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/Pages/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/pages/kardex/kardex_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/kardex/kardex_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/lib/pages/load_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/App/lib/pages/load_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

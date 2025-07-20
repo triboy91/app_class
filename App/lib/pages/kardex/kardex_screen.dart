@@ -92,8 +92,6 @@ class _KardexScreenState extends State<KardexScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Expediente del Alumno'),
-        backgroundColor: Colors.blue[800],
-        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [
