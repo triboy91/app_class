@@ -1,7 +1,7 @@
-import 'package:cesunapp/main.dart';
+import 'package:cesunapp/Pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:cesunapp/Pages/student_page.dart'; // 👈 pantalla de perfil
+import 'package:lottie/lottie.dart'; 
 
 class LoadPage extends StatefulWidget {
   const LoadPage({super.key});
@@ -17,7 +17,7 @@ class _LoadPageState extends State<LoadPage> {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const StudentPage()),
+        MaterialPageRoute(builder: (context) => const HomePage()),
       );
     });
   }
