@@ -25,28 +25,24 @@ class _LoadPageState extends State<LoadPage> {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Logo de CESUN
-              Image.asset(
-                'assets/images/cesun_logo.png',
-                width: 300,
-                height: 300,
-                fit: BoxFit.contain,
-              ),
-              SizedBox(height: 32), // Espacio entre logo y animación
-              // Animación de carga
-              SizedBox(
-                width: 150,
-                height: 150,
-                child: Lottie.asset('assets/jsons/loading.json'),
-              ),
-            ],
-          ),
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/cesun_logo.png',
+              width: 220,
+              height: 220,
+            ),
+            SizedBox(height: 32),
+            Lottie.asset(
+              'assets/jsons/loading.json',
+              width: 150,
+              height: 150,
+              fit: BoxFit.contain,
+            ),
+          ],
         ),
       ),
     );
