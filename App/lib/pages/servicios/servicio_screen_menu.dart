@@ -1,4 +1,3 @@
-// Dart
 import 'package:flutter/material.dart';
 import 'servicio_comunitario_screen.dart';
 import 'servicio_social_screen.dart';
