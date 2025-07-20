@@ -28,14 +28,14 @@ class _LoadPageState extends State<LoadPage> {
           children: [
             Image.asset(
               'assets/images/cesun_logo.png',
-              width: 120,
-              height: 120,
+              width: 220,
+              height: 220,
             ),
             SizedBox(height: 32),
             Lottie.asset(
               'assets/jsons/loading.json',
-              width: 100,
-              height: 100,
+              width: 150,
+              height: 150,
               fit: BoxFit.contain,
             ),
           ],
