@@ -6,6 +6,7 @@ import '/pages/servicios/practicas_profesionales_screen.dart';
 import '/pages/titulacion/titulacion_screen.dart';
 import '/pages/calificaciones/calificaciones_screen.dart';
 import '/pages/horario/horario_screen.dart';
+import '/pages/student_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -111,7 +112,20 @@ class _HomePageState extends State<HomePage> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: const Text('CESUN APP')),
+      appBar: AppBar(
+        title: const Text('CESUN APP'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.account_circle),
+            tooltip: 'Perfil de usuario',
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const StudentPage()),
+              );
+            },
+          ),
+        ],
+      ),
       body: body,
       bottomNavigationBar: Column(
         mainAxisSize: MainAxisSize.min,
