@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream:App/lib/Pages/student_page.dart
-import 'package:cesunapp/Pages/load_page.dart'; 
-=======
->>>>>>> Stashed changes:App/lib/pages/student.dart
 
 class StudentPage extends StatefulWidget {
   const StudentPage({super.key});
@@ -11,13 +7,9 @@ class StudentPage extends StatefulWidget {
   State<StudentPage> createState() => _StudentPageState();
 }
 
-<<<<<<< Updated upstream:App/lib/Pages/student_page.dart
-class _StudentPageState extends State<StudentPage> {
-=======
-class _PerfilUsuarioScreenState extends State<PerfilUsuarioScreen>
+class _StudentPageState extends State<StudentPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
->>>>>>> Stashed changes:App/lib/pages/student.dart
   final _formKey = GlobalKey<FormState>();
 
   // Controladores para Datos Generales
