@@ -1,4 +1,3 @@
-// Dart
 import 'package:flutter/material.dart';
 
 class ServicioSocialScreen extends StatelessWidget {
